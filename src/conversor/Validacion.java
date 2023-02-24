@@ -12,7 +12,7 @@ public class Validacion {
 			try {
 				double doubleMoneda = Double.parseDouble(moneda);
 				return doubleMoneda;
-			} catch (NumberFormatException e) {
+			} catch (NumberFormatException | NullPointerException en) {
 				//JOptionPane.showMessageDialog(null, " Debe ingresar un número" + e.getMessage());
 				JOptionPane.showMessageDialog(null, " Valor no válido" );
 				continue;
