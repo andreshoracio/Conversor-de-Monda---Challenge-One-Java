@@ -29,5 +29,17 @@ public class Menu {
 				   1);
 		return seleccion.toString();		
 	}
+	
+	public String tipoEscala() {
+		Object seleccion = JOptionPane.showInputDialog(
+				   null, //componente padre
+				   "Seleccione opción de conversión",
+				   "Menu",
+				   JOptionPane.PLAIN_MESSAGE,
+				   null,  // icono defecto
+				   new Object[] { "Conversor de Moneda", "Conversor de Temperatura"}, 
+				   1);
+		return seleccion.toString();
+	}
 
 }

@@ -1,26 +1,32 @@
 # Conversor de Moneda Challenge One Java
-Conversor de Monda - Challenge One Java
+Conversor de Moneda - Challenge One Java
 
 <h1 align="center">
-  <p align="center">Encriptador de texto</p>
-  <a href="https://andreshoracio.github.io/encriptador/"><img src="https://andreshoracio.github.io/encriptador/img/mu%C3%B1eco.png" alt="encriptador texto"></a>
+  <p align="center">Conversor Moneda</p>
+  <img src="https://raw.githubusercontent.com/andreshoracio/Conversor-de-Moneda---Challenge-One-Java/main/src/resources/img/conversor%20moneda.gif" alt="encriptador texto">
 </h1>
 
-> **Las "llaves" de encriptación que utilizaremos son las siguientes:
- La letra "i" es convertida para "imes"
-La letra "a" es convertida para "ai"
-La letra "o" es convertida para "ober"
-La letra "u" es convertida para "ufat".**
+> **se nos solicitó crear un conversor de divisas utilizando el lenguaje Java. Las características solicitadas por nuestro cliente son las siguientes.**
  
 
 > 
 ## Requisitos:
-- Debe funcionar solo con letras minúsculas
-- No deben ser utilizados letras con acentos ni caracteres especiales
-- Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra    encriptada para su versión original.
+	- El convertidor de moneda debe:
+- Convertir de la moneda de tu país a Dólar
+- Convertir de la moneda de tu país  a Euros
+- Convertir de la moneda de tu país  a Libras Esterlinas
+- Convertir de la moneda de tu país  a Yen Japonés
+- Convertir de la moneda de tu país  a Won sul-coreano
 
+    - Recordando que también debe ser posible convertir inversamente, es decir:
+    
+ - Convertir de Dólar a la moneda de tu país
+ - Convertir de Euros a la moneda de tu país
+ - Convertir de Libras Esterlinas a la moneda de tu país
+ - Convertir de Yen Japonés a la moneda de tu país
+ - Convertir de Won sul-coreano a la moneda de tu país
 
 ```Por ejemplo:
-"gato" => "gaitober"
-gaitober" => "gato"
+"$10.000" => "$ 2.04" pesos a dolar
+"2.04" => "10.000" dolar a pesos
 ```

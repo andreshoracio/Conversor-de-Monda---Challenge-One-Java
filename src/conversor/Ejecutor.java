@@ -21,14 +21,16 @@ public class Ejecutor {
 			String seleccion = menu.menuConversores();
 			double valor = 0;
 			String resultado = "";
-			String tipoMoneda = "";
+			String tipo = "";
 			
 			if (seleccion.equals("Conversor de Moneda")) {			
-				valor = validacion.evaluarEntero();
-				tipoMoneda = menu.tipoDeMoneda();
-				resultado = conversorMoneda.convertir(tipoMoneda, valor);		
+				valor = validacion.evaluarNumero();
+				tipo = menu.tipoDeMoneda();
+				resultado = conversorMoneda.convertir(tipo, valor);		
 				JOptionPane.showMessageDialog(null,"Tienes $"+ resultado);
 			} else {
+				valor = validacion.evaluarNumero();
+				tipo = menu.tipoEscala();
 				conversorTemperatura.convertir();
 			}
 			
