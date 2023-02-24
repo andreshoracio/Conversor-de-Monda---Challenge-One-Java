@@ -37,8 +37,9 @@ public class Menu {
 				   "Menu",
 				   JOptionPane.PLAIN_MESSAGE,
 				   null,  // icono defecto
-				   new Object[] { "Conversor de Moneda", "Conversor de Temperatura"}, 
-				   1);
+				   new Object[] { "Celsius a Kelvin", "Celsius a Fahrenheit",
+						   		  "Celsius a Rankine", "Kelvin a Celsius",
+						   		  "Fahrenheit a Celsius", "Rankine a Celsius"}, 1);
 		return seleccion.toString();
 	}
 

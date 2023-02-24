@@ -4,10 +4,10 @@ import javax.swing.JOptionPane;
 
 public class Validacion {
 
-	public double evaluarNumero() {
+	public double evaluarNumero(String mesaje) {
 		while(true) {
 
-			String moneda = JOptionPane.showInputDialog("Ingresa la cantidad de dinero que deseas convertir:");
+			String moneda = JOptionPane.showInputDialog(mesaje);
 
 			try {
 				double doubleMoneda = Double.parseDouble(moneda);

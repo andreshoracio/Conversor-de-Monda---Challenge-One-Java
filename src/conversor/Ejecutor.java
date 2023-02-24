@@ -24,14 +24,15 @@ public class Ejecutor {
 			String tipo = "";
 			
 			if (seleccion.equals("Conversor de Moneda")) {			
-				valor = validacion.evaluarNumero();
+				valor = validacion.evaluarNumero("Ingresa la cantidad de dinero que deseas convertir:");
 				tipo = menu.tipoDeMoneda();
 				resultado = conversorMoneda.convertir(tipo, valor);		
 				JOptionPane.showMessageDialog(null,"Tienes $"+ resultado);
 			} else {
-				valor = validacion.evaluarNumero();
+				valor = validacion.evaluarNumero("Ingrese la temperatura");
 				tipo = menu.tipoEscala();
-				conversorTemperatura.convertir();
+				resultado = conversorTemperatura.convertir(tipo, valor);
+				JOptionPane.showMessageDialog(null,"La temperatura es: "+ resultado);
 			}
 			
 			int i = JOptionPane.showConfirmDialog(null, "¿Desea continuar?");
